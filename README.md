@@ -22,3 +22,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 Following Tutorials:
   * http://www.phoenixframework.org/docs/up-and-running
   * http://codetunes.com/2015/phoenix-blog/
+
+Upon first run of `mix phoenix.server` there were no styles and odd warnings about js errors.
+Updating/installing babel-preset seemed to help fix this: `npm install --save-dev babel-preset-es2015`
+Running `mix phoenix.server` then compiled properly and served styles.
